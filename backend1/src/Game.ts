@@ -32,6 +32,7 @@ export class Game{
         from : string;
         to : string;
     } ){
+        console.log(move);
         // validate the type of move using zod
         if(this.moveCount %2 === 0 && socket !== this.player1){
             return;
